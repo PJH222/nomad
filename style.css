@@ -1,0 +1,31 @@
+    body {
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(145deg,#ffa801, #ffd32a, #ff3f34,#ef5777, #575fcf, #4bcffa, #34e7e4, #0be881, #f53b57, #3c40c6, #0fbcf9, #00d8d6, #05c46b, #ffc048, #ffdd59, #ff5e57, #d2dae2, #485460, #ffa801, #ffd32a, #ff3f34);
+    background-size: 1800% 1800%;
+    animation: auroraAnimation 5s infinite linear;
+    transition: background 0.3s;
+  }
+
+  @keyframes auroraAnimation {
+    0% {
+      background-position: 50% 50%;
+    }
+    50%  {
+        background-position: 0% 50%;
+    }
+    100%  {
+      background-position: 50% 50%;
+  }
+  }
+
+  button {
+    font-size: 16px;
+    padding: 5px 10px;
+    cursor: pointer;
+    border: red;
+    outline: red;
+    color: black;
+    border-radius: 3px;
+    transition: background-color 0.3s;
+  }
