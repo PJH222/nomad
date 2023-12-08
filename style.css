@@ -1,11 +1,22 @@
     body {
-    height: 100vh;
+    height: 10000%;
     margin: 0;
     background: linear-gradient(145deg,#ffa801, #ffd32a, #ff3f34,#ef5777, #575fcf, #4bcffa, #34e7e4, #0be881, #f53b57, #3c40c6, #0fbcf9, #00d8d6, #05c46b, #ffc048, #ffdd59, #ff5e57, #d2dae2, #485460, #ffa801, #ffd32a, #ff3f34);
     background-size: 1800% 1800%;
     animation: auroraAnimation 5s infinite linear;
     transition: background 0.3s;
   }
+  
+  #background-image {
+    width: 5%;
+    height: 5%;
+    object-fit: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
 
   @keyframes auroraAnimation {
     0% {

@@ -1,37 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Momentum App</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-
+    <title>Momentum App</title>
+  </head>
+  <body>
     
-    
-</head>
-<body>
-    <h2 id="clock"></h2>
-    <h4 id="nowClock"></h4>
-    <form class="hidden" id = "login-form"></form>
-    <h1 class="hidden" id="greeting"></h1>
-    <form id = "todo-form">
-        <input type="text" placeholder="Write a To Do and Press Enter" required />
-        <button></button>
+    <h2 id="clock">00:00:00</h2>
+    <form class="hidden" id="login-form">
+      <input
+        required
+        maxlength="15"
+        type="text"
+        placeholder="What is your name?"
+      />
+      <input type="submit" value="Log In" />
     </form>
-    <ul id="todo-list">
-        <li>
-            <span>text</span>
-            <button>★</button>
-        </li>
-    </ul>
+    
+    <h1 class="hidden" id="greeting"></h1>
+    <form id="todo-form">
+      <input type="text" placeholder="Write a To Do and Press Enter" required />
+    </form>
+    <ul id="todo-list"></ul>
+    <div id="quote">
+      <span></span>
+      <span></span>
+    </div>
     <div id="weather">
-        <span></span>
-        <span></span>
-      </div>
-</body>
+      <span></span>
+      <span></span>
+    </div>
     <script src="clock.js"></script>
-    <script src="todo.js"></script>
-    <script src="background.js"></script>
-    <script src="weather.js"></script>
 
+    <script src="greetings.js"></script>
+    
+    <script src="quotes.js"></script>
+    <script src="background.js"></script>
+    
+    <script src="todo.js"></script>
+    <script src="weather.js"></script>
+  </body>
 </html>
