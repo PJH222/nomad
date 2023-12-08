@@ -1,7 +1,7 @@
 const toDoForm = document.getElementById("todo-form");
 const toDoInput = document.querySelector("#todo-form input");
 const toDoList = document.getElementById("todo-list");
-// 집가고싶다아아앙 ㅁㄴㅇㅁㄴ이ㅏㅁ노이ㅏㅁㄴㅇㅁㄴ
+// 진짜 업데이트가 될까??
 function deleteToDo(event){
     const li = event.target.parentElement;
     li.remove();
